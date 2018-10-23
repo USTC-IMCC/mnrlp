@@ -6,7 +6,7 @@
 邮件通知程序
 
 ```shell
-from mn import ustcmail
+from mailapp import ustcmail
 ustcmail("lcb592","不告诉你密码","774054270@qq.com","Hello")
 ```
 ---
