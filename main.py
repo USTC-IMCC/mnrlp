@@ -16,8 +16,9 @@ def main():
     i = 0
     while (1-i):
         i,text = monitor1080(args.cpu,args.gpu,args.mem)
-        ustcmail(args.sn,args.pw,args.ra,text)
-        print("Found!\n") if i else print("Not Found!\n") 
+        if i:
+            ustcmail(args.sn,args.pw,args.ra,text)
+            print("Found!\n")
         time.sleep(10)
 
 if __name__ == "__main__":
