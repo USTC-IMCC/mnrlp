@@ -2,7 +2,7 @@
 
 ---
 
-## mn.py
+## mailapp.py
 邮件通知程序
 
 ```shell
