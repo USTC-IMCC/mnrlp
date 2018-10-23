@@ -3,7 +3,7 @@
 ---
 
 ## mn.py
-邮件通知客户端
+邮件通知程序
 
 ```shell
 from mn import ustcmail
