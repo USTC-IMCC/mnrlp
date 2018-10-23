@@ -2,11 +2,11 @@ import re
 import os
 import argparse
 
-parser = argparse.ArgumentParser(description='Resources Monitor')
-parser.add_argument('--cpu', default='4', type=int, help='CPU Number')
-parser.add_argument('--gpu', default='1', type=int, help='GPU Number')
-parser.add_argument('--mem', default='8192', type=int, help='Memory Size')
-args = parser.parse_args()
+#parser = argparse.ArgumentParser(description='Resources Monitor')
+#parser.add_argument('--cpu', default='4', type=int, help='CPU Number')
+#parser.add_argument('--gpu', default='1', type=int, help='GPU Number')
+#parser.add_argument('--mem', default='8192', type=int, help='Memory Size')
+#args = parser.parse_args()
 
 def monitor1080(cpu=4,gpu=1,memory=8192):
     os.system("wget https://cloud.bitahub.com/resources/gtx1080ti -O gtx1080ti")
@@ -23,7 +23,7 @@ def monitor1080(cpu=4,gpu=1,memory=8192):
     pattern1 = re.compile(p1,re.DOTALL)
     matcher1 = re.findall(pattern1,key)
     flag = 0
-    text = ''
+    text = 'Resource Requirement: CPU ' + str(cpu) + ', GPU ' + str(gpu) + ', Memory ' + str(memory) + '\n'
     for match in matcher1:
         #print(match)
         if ((int(match[1]))>=cpu)and(((int(match[3]))>=gpu))and((int(match[5]))>=memory):
@@ -35,4 +35,11 @@ def monitor1080(cpu=4,gpu=1,memory=8192):
     return flag, text
 
 if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description='Resources Monitor')
+    parser.add_argument('--cpu', default='4', type=int, help='CPU Number')
+    parser.add_argument('--gpu', default='1', type=int, help='GPU Number')
+    parser.add_argument('--mem', default='8192', type=int, help='Memory Size')
+    args = parser.parse_args()
+
     monitor1080(args.cpu,args.gpu,args.mem)
