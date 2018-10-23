@@ -6,7 +6,7 @@
 邮件通知客户端
 
 ```shell
-from mn.py import ustcmail
+from mn import ustcmail
 ustcmail("lcb592","不告诉你密码","774054270@qq.com","Hello")
 ```
 ---
