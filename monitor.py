@@ -9,7 +9,8 @@ import argparse
 #args = parser.parse_args()
 
 def monitor1080(cpu=4,gpu=1,memory=8192):
-    os.system("wget https://cloud.bitahub.com/resources/gtx1080ti -O gtx1080ti > /dev/null 2>&1")
+    #os.system("wget https://cloud.bitahub.com/resources/gtx1080ti -O gtx1080ti > /dev/null 2>&1")
+    os.system("wget -q https://cloud.bitahub.com/resources/gtx1080ti -O gtx1080ti")
     f = open('./gtx1080ti', 'r')
     data = f.read()
     f.close()
