@@ -19,6 +19,8 @@ def main():
         if i:
             ustcmail(args.sn,args.pw,args.ra,text)
             print("Found!\n")
+        else:
+        	print("Not Found Yet!")
         time.sleep(10)
 
 if __name__ == "__main__":
