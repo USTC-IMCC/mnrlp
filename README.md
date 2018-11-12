@@ -6,7 +6,7 @@
 执行
 
 ```shell
-python3 mian.py --cpu8 --gpu4 --mem 16384 --sn lcb592 --pw "不告诉你" --ra 774054270@qq.com
+python3 main.py --cpu8 --gpu4 --mem 16384 --sn lcb592 --pw "不告诉你" --ra 774054270@qq.com
 ```
 
 当有资源满足你的需求时，你会在终端得到
