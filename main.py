@@ -1,6 +1,6 @@
 import time
 from mailapp import ustcmail
-from monitornew import monitordebug, monitor1080, monitorv100, monitorxp
+from monitornew2 import monitordebug, monitor1080, monitorv100, monitorxp
 import argparse
 
 parser = argparse.ArgumentParser(description='Mail Sender')
