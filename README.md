@@ -13,7 +13,7 @@ python3 main.py --cpu8 --gpu4 --mem 16384 --sn lcb592 --pw "不告诉你" --ra 7
 
 ```shell
 Found!
-```65536
+```
 
 同时收到邮件
 
@@ -30,7 +30,7 @@ ustcmail("lcb592","不告诉你密码","774054270@qq.com","正文")
 ## monitor.py
 资源监视程序
 
-```shell
+```
 from monitor import monitor1080
 i, text = monitor1080(cpu需求，gpu需求，内存需求)
 ```
