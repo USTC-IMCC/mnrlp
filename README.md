@@ -5,7 +5,7 @@
 
 执行
 
-```shell
+```
 python3 main.py --cpu8 --gpu4 --mem 16384 --sn lcb592 --pw "不告诉你" --ra 774054270@qq.com
 ```
 
