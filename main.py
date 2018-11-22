@@ -1,4 +1,5 @@
 import time
+import datetime
 from mailapp import ustcmail
 from monitornew2 import monitordebug, monitor1080, monitorv100, monitorxp
 import argparse
@@ -34,7 +35,8 @@ def main():
             print("Found!\n")
             print(text)
         else:
-            print("Not Found Yet!")
+            time_stamp = datetime.datetime.now()
+            print(time_stamp.strftime('%Y.%m.%d-%H:%M:%S')+" Not Found Yet!")
             time.sleep(3)
 
 if __name__ == "__main__":
