@@ -1,5 +1,9 @@
 # 类脑平台资源检索邮件通知
 
+[![Awesome](https://awesome.re/badge-flat.svg)](http://home.ustc.edu.cn/~lcb592/)
+
+Powered by [Boss Liu](https://liuboss1992.github.io/).
+
 ## main.py
 主程序
 
